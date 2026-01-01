@@ -1,25 +1,18 @@
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, ScrollView, Image } from 'react-native'
 import React from 'react'
 import MovieCardItem from '@/components/MovieCardItem'
 import { SafeAreaView } from 'react-native-safe-area-context'
+import PopularMovies from '@/components/PopularMovies'
+import LatestMovies from '@/components/LatestMovies'
 
 
 
 export default function index() {
   return (
-    <SafeAreaView style={{ padding: 12 }}>
-      <Text style={{ fontSize: 20, fontWeight: "semibold",padding:12 }}>Popular Movies</Text>
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{
-          flexDirection: "row",
-          paddingHorizontal: 10,
-        }}>
-        <MovieCardItem />
-        <MovieCardItem />
-        <MovieCardItem />
-        <MovieCardItem />
+    <SafeAreaView style={{ padding: 12,backgroundColor:"#030014" }}>
+      <ScrollView showsVerticalScrollIndicator={false}>
+      <PopularMovies/>
+      <LatestMovies/>
       </ScrollView>
     </SafeAreaView>
   )

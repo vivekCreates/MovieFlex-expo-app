@@ -4,7 +4,7 @@ import MovieCardItem from './MovieCardItem'
 
 export default function LatestMovies() {
     return (
-        <View>
+        <View >
             <Text style={{ fontSize: 20, fontWeight: "600", marginBottom: 10, color: "white" }}>Latest Movies</Text>
             <View style={{ flexDirection: "row", flexWrap: 'wrap' }}>
                 <MovieCardItem />
