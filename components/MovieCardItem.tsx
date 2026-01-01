@@ -6,7 +6,7 @@ const CARD_WIDTH = width / 3 - 16; // 👈 3 columns
 
 export default function MovieCardItem() {
   return (
-    <View style={{ width: CARD_WIDTH, marginBottom: 24 }}>
+    <View style={{ width: CARD_WIDTH, marginBottom: 24}}>
       <Image
         source={{ uri: "https://images.unsplash.com/photo-1765572446249-a583906255f0" }}
         style={{

@@ -6,7 +6,7 @@ export default function LatestMovies() {
     return (
         <View >
             <Text style={{ fontSize: 20, fontWeight: "600", marginBottom: 10, color: "white" }}>Latest Movies</Text>
-            <View style={{ flexDirection: "row", flexWrap: 'wrap' }}>
+            <View style={{ flexDirection: "row", flexWrap: 'wrap' ,gap:10}}>
                 <MovieCardItem />
                 <MovieCardItem />
                 <MovieCardItem />

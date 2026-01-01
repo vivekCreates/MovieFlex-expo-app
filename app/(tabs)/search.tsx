@@ -14,8 +14,8 @@ export default function search() {
         <View style={{ marginTop:50,marginBottom: 10 }}>
           <SearchItem />
         </View>
-        <View style={{ padding: 20 }}>
-          <Text style={{ fontSize: 25, color: "white", }}>Seach for Venom</Text>
+        <View style={{ padding: 12 }}>
+          <Text style={{ fontSize: 25, color: "white" }}>Seach for Venom</Text>
           <View style={{ flexDirection: "row", gap: 4, marginTop: 10 }}>
             {
               FILTERS.map((item) => (
@@ -23,7 +23,7 @@ export default function search() {
                   key={item}
                   onPress={() => setActive(item)}
                   style={{
-                    paddingHorizontal: 14,
+                    paddingHorizontal: 10,
                     paddingVertical: 8,
                     borderRadius: 20,
                     backgroundColor: active === item ? "#fff" : "#0F0D23",
@@ -37,7 +37,7 @@ export default function search() {
             }
           </View>
 
-          <View style={{ flexDirection: "row", flexWrap: "wrap", marginTop: 40 }}>
+          <View style={{ flexDirection: "row", flexWrap: "wrap", marginTop: 40,gap:10 }}>
             <MovieCardItem />
             <MovieCardItem />
             <MovieCardItem />

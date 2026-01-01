@@ -11,6 +11,7 @@ export default function PopularMovies() {
               showsHorizontalScrollIndicator={false}
               contentContainerStyle={{
                 flexDirection: "row",
+                gap:10
               }}>
               <MovieCardItem />
               <MovieCardItem />
