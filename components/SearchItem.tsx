@@ -5,17 +5,17 @@ export default function SearchItem() {
   return (
     <View style={{flexDirection:"row",justifyContent:"center"}}>
         <TextInput
-             placeholder="Search..."
-             placeholderTextColor="#fff"
+             placeholder="Search through 300 movies online"
+             placeholderTextColor="grey"
             //  value={""}
              // onChangeText={}
              style={{
                borderWidth: 1,
-               padding: 10,
-               borderRadius: 8,
+               padding: 15,
+               borderRadius: 20,
                marginBottom: 10,
-               width:"80%",
-                backgroundColor:"#212121",
+               width:"90%",
+                backgroundColor:"#0F0D23",
                 color:"white"
              }}
          />
