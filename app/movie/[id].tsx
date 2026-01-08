@@ -1,12 +1,12 @@
 import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { useLocalSearchParams } from 'expo-router'
+import { useLocalSearchParams, useRouter } from 'expo-router'
 import { Ionicons } from '@expo/vector-icons';
 
 export default function movie() {
   const params = useLocalSearchParams();
-  console.log(params.id)
+   const router = useRouter()
   return (
     <SafeAreaView style={{ height: "100%", backgroundColor: "#030014" }}>
       <Image style={{ width: "100%", height: "30%" }} source={{ uri: "https://images.unsplash.com/photo-1765572446249-a583906255f0" }} />
@@ -62,7 +62,7 @@ export default function movie() {
             </View>
           </View>
         </View>
-        <TouchableOpacity style={{width:"100%",paddingVertical:10,borderRadius:10,flexDirection:"row",justifyContent:"center",alignItems:"center",backgroundColor:"#AF91FF",marginTop:20}}>
+        <TouchableOpacity onPress={()=>router.push("/")} style={{width:"100%",paddingVertical:10,borderRadius:10,flexDirection:"row",justifyContent:"center",alignItems:"center",backgroundColor:"#AF91FF",marginTop:20}}>
         <Text>Visit Homepage</Text>
         </TouchableOpacity>
       </View>
